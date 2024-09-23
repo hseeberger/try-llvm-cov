@@ -1,0 +1,18 @@
+[package]
+name          = "try-llvm-cov"
+version       = "0.0.1"
+edition       = "2021"
+description   = "try-llvm-cov"
+authors       = [ "Heiko Seeberger <git@heikoseeberger.de>" ]
+license-file  = "LICENSE"
+readme        = "README.md"
+homepage      = "https://github.com/hseeberger/try-llvm-cov"
+repository    = "https://github.com/hseeberger/try-llvm-cov"
+documentation = "https://github.com/hseeberger/try-llvm-cov"
+
+[dependencies]
+
+[dev-dependencies]
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = [ 'cfg(coverage)' ] }
